@@ -1,4 +1,4 @@
-const min = (arr) => {
+exports.min = function min (arr){
   let minElem
   if (arr === undefined || arr.length === 0) return 0
   else {
@@ -10,7 +10,7 @@ const min = (arr) => {
   return minElem
 }
 
-const max = (arr) => {
+exports.max = function max (arr) {
   let maxElem
   if (arr === undefined || arr.length === 0) return 0
   else {
@@ -22,7 +22,7 @@ const max = (arr) => {
   return maxElem
 }
 
-const avg = (arr) => {
+exports.avg = function avg (arr) {
   let sum = 0
   if (arr === undefined || arr.length === 0) return 0
   else {
@@ -30,7 +30,3 @@ const avg = (arr) => {
   }
   return sum / (arr.length)
 }
-
-module.exports = min
-module.exports = max
-module.exports = avg
